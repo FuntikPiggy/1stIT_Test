@@ -1,0 +1,29 @@
+[project]
+name = "moneymoving"
+version = "0.1.0"
+description = "Веб-сервис для управления движением денежныхсредств (ДДС)"
+authors = [
+    {name = "Gurin Valeriy",email = "gurin.valerii@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "django (>=5.2.7,<6.0.0)",
+    "django-smart-selects (>=1.7.2,<2.0.0)",
+    "django-admin-rangefilter (>=0.13.3,<0.14.0)",
+    "djangorestframework (>=3.16.1,<4.0.0)",
+    "djoser (>=2.3.3,<3.0.0)"
+]
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.14.1,<0.15.0)",
+    "pytest (>=8.4.2,<9.0.0)",
+    "pytest-django (>=4.11.1,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
